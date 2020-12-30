@@ -25,8 +25,8 @@ while True:
 
     # imgBlank = np.zeros((200, 200), np.uint8)
 
-    StackedImages = myUtils.stackImages(([img, imgGray, imgBlur],
-                                         [imgCanny, imgDilation, imgEroded]), 0.3)
+    StackedImages = myUtils.stackImages(0.3, ([img, imgGray, imgBlur],
+                                         [imgCanny, imgDilation, imgEroded]))
 
     cv2.imshow("Staked Images", StackedImages)
 
